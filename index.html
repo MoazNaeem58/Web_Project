@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Car Parking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .banner {
+      background-color: #003366;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .feature-card:hover {
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transform: translateY(-5px);
+      transition: 0.3s;
+    }
+    .footer {
+      background-color: #222;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">SmartParking</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <!-- Banner -->  <header class="banner">
+    <div class="container">
+      <h1>Welcome to Smart Car Parking System</h1>
+      <p>Find and reserve parking in real-time with ease</p>
+      <a href="#register" class="btn btn-light mt-3">Get Started</a>
+    </div>
+  </header>  <!-- About Section -->  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2>About Us</h2>
+      <p class="mt-3">We offer a smart and secure solution for all your car parking needs, helping users find parking spots quickly and efficiently using modern web tools.</p>
+    </div>
+  </section>  <!-- Features Section -->  <section id="features" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Key Features</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card feature-card p-3 text-center">
+            <h5>Real-time Availability</h5>
+            <p>Live updates on available parking spaces.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card p-3 text-center">
+            <h5>Online Booking</h5>
+            <p>Reserve your spot ahead of time easily.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card p-3 text-center">
+            <h5>Secure Payments</h5>
+            <p>Multiple safe payment options supported.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Registration Form -->  <section id="register" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Register Your Spot</h2>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="mb-3">
+          <label for="vehicle" class="form-label">Vehicle Number</label>
+          <input type="text" class="form-control" id="vehicle" required />
+        </div>
+        <div class="mb-3">
+          <label for="time" class="form-label">Time Slot</label>
+          <input type="time" class="form-control" id="time" required />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Reserve Now</button>
+      </form>
+    </div>
+  </section>  <!-- Footer -->  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 SmartParking. All rights reserved.</p>
+    </div>
+  </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>
